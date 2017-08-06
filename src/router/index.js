@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 // UI
-import Dashboard from '@/onlyone/pages/dashboard/dashboard'
+// import Dashboard from '@/onlyone/pages/dashboard/dashboard'
 import Alerts from '@/onlyone/pages/ui/alerts'
 import Buttons from '@/onlyone/pages/ui/buttons'
 import Forms from '@/onlyone/pages/ui/forms'
@@ -16,7 +16,7 @@ export default new Router({
     {
       path: '/dashboard',
       name: 'Dashboard',
-      component: Dashboard
+      component: () => import('@/onlyone/pages/dashboard/dashboard')
     },
     {
       path: '/alerts',
