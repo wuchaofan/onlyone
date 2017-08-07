@@ -141,7 +141,5 @@ html{
     border-radius: 10px;
      background-color: rgba(255,255,255,0.3);
 }
- .sourcecode code span{
-  font-size: 16px;
-} 
+ 
 </style>
