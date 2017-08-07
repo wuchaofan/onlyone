@@ -14,7 +14,12 @@
         <v-tabs-item
         href="#onlyapi"
         ripple>
-        Api
+        Props
+        </v-tabs-item>
+         <v-tabs-item
+        href="#onlyslots"
+        ripple>
+        Slots
         </v-tabs-item>
         <v-tabs-slider :class="$store.state.themeBackgroundColor" ></v-tabs-slider>
     </v-tabs-bar>
@@ -39,6 +44,14 @@
         <v-card flat>
             <v-card-text>
                 <slot name="onlyapi"></slot>
+            </v-card-text>
+        </v-card>
+    </v-tabs-content>
+    <v-tabs-content
+        id="onlyslots">
+        <v-card flat>
+            <v-card-text>
+                <slot name="onlyslots"></slot>
             </v-card-text>
         </v-card>
     </v-tabs-content>

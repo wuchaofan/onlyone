@@ -129,5 +129,19 @@ html{
     border-top-color: #99CC66;
     border-left-color: #99CC66;
 }
-
+::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+     background-color: rgba(255,255,255,0.3);
+}
+ .sourcecode code span{
+  font-size: 16px;
+} 
 </style>

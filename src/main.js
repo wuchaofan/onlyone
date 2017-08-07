@@ -8,11 +8,14 @@ import VueResource from 'vue-resource'
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
 import 'vuetify/dist/vuetify.min.css'
+import VueHighlightJS from 'vue-highlightjs'
 import store from './utils/vuex'
 
 Vue.config.productionTip = false
 Vue.use(Vuetify)
 Vue.use(VueResource)
+Vue.use(VueHighlightJS)
+
 NProgress.configure({ easing: 'ease', speed: 500 })
 NProgress.inc(0.2)
 
