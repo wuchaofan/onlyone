@@ -1,5 +1,5 @@
 <template>
-  <v-tabs dark v-model="active">
+  <v-tabs dark v-model="mactive">
     <v-tabs-bar slot="activators" class="cyan">
         <v-tabs-item
         href="#showcase"
@@ -55,7 +55,7 @@
             </v-card-text>
         </v-card>
     </v-tabs-content>
-    </v-tabs>
+  </v-tabs>
 </template>
 
 <script>
@@ -63,9 +63,10 @@ export default {
   name: 'tabs',
   data () {
     return {
-      active: null
+      mactive: this.active
     }
-  }
+  },
+  props: ['active']
 }
 </script>
 
