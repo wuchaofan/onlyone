@@ -5,7 +5,8 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     leftsideMini: false,
-    themeBackgroundColor: 'purple'
+    themeBackgroundColor: 'purple',
+    preloadIsShow: true
   },
   mutations: {
     chnageLeftside (state, obj) {
@@ -14,6 +15,9 @@ export default new Vuex.Store({
     },
     changeThemebgcolor (state, obj) {
       state.themeBackgroundColor = obj.bgcolor
+    },
+    changePreloadIsShow (state) {
+      state.preloadIsShow = !state.preloadIsShow
     }
   }
 })

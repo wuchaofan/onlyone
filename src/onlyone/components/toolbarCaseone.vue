@@ -64,7 +64,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .only-menu{
-  margin-left: 160px;
+  margin-left: 120px;
 }
 .only-menu-mini{
   margin-left: 10px;

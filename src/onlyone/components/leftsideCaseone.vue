@@ -72,7 +72,7 @@
 </script>
 <style scoped>
 .navigation-drawer{
-     width: 260px;  
+     width: 220px;  
    box-shadow: 1px 0 6px 2px #AAAAAA;
 }
 
