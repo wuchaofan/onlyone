@@ -4,7 +4,7 @@ import Router from 'vue-router'
 // UI
 // import Dashboard from '@/onlyone/pages/dashboard/dashboard'
 import Alerts from '@/onlyone/pages/ui/alerts/alerts'
-import Buttons from '@/onlyone/pages/ui/buttons'
+import Buttons from '@/onlyone/pages/ui/buttons/buttons'
 import Forms from '@/onlyone/pages/ui/forms'
 import Tabs from '@/onlyone/pages/ui/tabs'
 import Steppers from '@/onlyone/pages/ui/steppers'

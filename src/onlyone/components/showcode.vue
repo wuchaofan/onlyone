@@ -1,6 +1,6 @@
 <template>
   <v-tabs dark v-model="mactive">
-    <v-tabs-bar slot="activators" class="cyan">
+    <v-tabs-bar slot="activators" class="indigo">
         <v-tabs-item
         href="#showcase"
         ripple>

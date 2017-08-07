@@ -15,7 +15,7 @@
           </v-card-text>
         </v-card>
       </v-flex>
-      <v-flex xs6 class="top">
+      <!-- <v-flex xs6 class="top">
         <v-card>
           <v-card-text>
             <only-chart :option-data="leida"></only-chart>
@@ -28,7 +28,7 @@
             <only-chart :option-data="caseone"></only-chart>
           </v-card-text>
         </v-card>
-      </v-flex>
+      </v-flex> -->
        <v-flex xs6 class="top">
         <v-card>
           <v-card-text>

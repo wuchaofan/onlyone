@@ -105,9 +105,11 @@
 <style>
 html{
   margin: 0;
-  /* overflow: hidden; */
+  overflow: hidden; 
 }
-
+body{
+  overflow: auto;
+}
 
 #onlyone-app .navigation-drawer:not(.navigation-drawer--mini-variant) ~ main{
   padding-left: 220px;
@@ -141,5 +143,8 @@ html{
     border-radius: 10px;
      background-color: rgba(255,255,255,0.3);
 }
- 
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(0,0,0,0.25);
+}
 </style>
