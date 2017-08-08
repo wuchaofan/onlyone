@@ -1,20 +1,28 @@
 <template>
   <div class="bashboard">
     <v-layout row wrap>
-      <v-flex xs6>
+      <v-flex xs4>
         <v-card >
           <v-card-text>
             <only-chart :option-data="barchart"></only-chart>
           </v-card-text>
         </v-card>
       </v-flex>
-      <v-flex xs6>
+      <v-flex xs4>
         <v-card>
           <v-card-text>
             <only-chart :option-data="barnegative"></only-chart>
           </v-card-text>
         </v-card>
       </v-flex>
+      <v-flex xs4>
+        <v-card>
+          <v-card-text>
+            <only-chart :option-data="case5()"></only-chart>
+          </v-card-text>
+        </v-card>
+      </v-flex>
+
       <!-- <v-flex xs6 class="top">
         <v-card>
           <v-card-text>
@@ -73,7 +81,8 @@ export default {
       caseone: chartData.caseone,
       case2: chartData.case2,
       case3: chartData.case3,
-      case4: chartData.case4
+      case4: chartData.case4,
+      case5: chartData.case5
     }
   },
   computed: {

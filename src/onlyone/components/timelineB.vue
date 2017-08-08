@@ -80,7 +80,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .timeline-container{
-    width: 60%;
+     /* width: 60%;  */
     margin: 0 auto;
     min-height: 200px;
     /* margin-bottom: 20px; */
@@ -124,11 +124,17 @@ export default {
 .timeline-content{
     background-color: white;
     width: 45%;
+    /* max-width: 400px; */
     box-shadow: 0 3px 0 #d7e4ed;
     border-radius: 4px;
     position: relative;
     padding: 6px;
+    margin-left: -10px;
 }
+.timeline-block:nth-child(even) .timeline-content{
+  margin-right: -10px;
+}
+
 .timeline-content::before{
     content: '';
     position: absolute;

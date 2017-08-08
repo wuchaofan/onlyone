@@ -33,7 +33,11 @@
         id="timelineb">
         <v-card flat style="background-color: #EEEEEE;">
           <v-card-text> 
-              <timeline-b :timelines="timelines"></timeline-b>
+            <v-layout row wrap>
+                <v-flex xs12 sm12 md12 offset-lg3 lg6 class="only-center">
+                  <timeline-b :timelines="timelines"></timeline-b>
+                </v-flex>
+            </v-layout>
           </v-card-text>
         </v-card>
       </v-tabs-content>
@@ -53,7 +57,7 @@ export default {
   name: 'hello',
   data () {
     return {
-      active: 'timelineb',
+      active: 'timelinea',
       timelines: [
         {
           id: '01',

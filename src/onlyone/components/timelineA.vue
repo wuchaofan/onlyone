@@ -3,7 +3,7 @@
   <v-layout row :class="{'timeline-left': (index + 1) % 2 != 0,
     'timeline-right': (index + 1) % 2 == 0}" 
     v-for="(item, index) in timelines" :key="item.exid">
-    <v-flex lg6 class="pa-0" :class="{'offset-lg6': (index + 1) % 2 == 0}">
+    <v-flex md6 lg6 class="pa-0" :class="{'offset-lg6 offset-md6': (index + 1) % 2 == 0}">
     <div class="demo-card-wrapper">
         <div class="demo-card demo-card--step" :class="item.css">
         <div class="head">
@@ -97,8 +97,8 @@ export default {
   display: flex;
   position: relative;
   flex-direction: column;
-  flex: 0 0 50%;
-  max-width: 500px;
+  flex: 1 1 50%;
+  max-width: 400px;
   background-color: #46b8e9;
   box-shadow: 0px 1px 22px 4px rgba(0, 0, 0, 0.07);
   
@@ -180,5 +180,8 @@ export default {
   background-color: white;
   padding: 4px 6px;
   overflow-x: hidden;
+}
+.body span{
+  max-width: 100px;
 }
 </style>
