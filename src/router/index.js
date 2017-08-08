@@ -8,6 +8,7 @@ import Buttons from '@/onlyone/pages/ui/buttons/buttons'
 import Forms from '@/onlyone/pages/ui/forms'
 import Tabs from '@/onlyone/pages/ui/tabs'
 import Steppers from '@/onlyone/pages/ui/steppers'
+import Timelines from '@/onlyone/pages/ui/timelines/timelines'
 
 Vue.use(Router)
 
@@ -42,6 +43,11 @@ export default new Router({
       path: '/steppers',
       name: 'Steppers',
       component: Steppers
+    },
+    {
+      path: '/timelines',
+      name: 'Timelines',
+      component: Timelines
     },
     { path: '/', redirect: '/dashboard' }
   ]

@@ -38,6 +38,7 @@
               href: {name: 'Alerts'}
             },
             {title: 'Buttons', href: {name: 'Buttons'}},
+            {title: 'Timelines', href: {name: 'Timelines'}},
             {title: 'Forms', href: {name: 'Forms'}},
             {title: 'Tabs', href: {name: 'Tabs'}},
             {title: 'Steppers', href: {name: 'Steppers'}}
