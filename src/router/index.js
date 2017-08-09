@@ -9,6 +9,7 @@ import Forms from '@/onlyone/pages/ui/forms'
 import Tabs from '@/onlyone/pages/ui/tabs'
 import Steppers from '@/onlyone/pages/ui/steppers'
 import Timelines from '@/onlyone/pages/ui/timelines/timelines'
+import Loadings from '@/onlyone/pages/ui/Loadings/loadings'
 
 Vue.use(Router)
 
@@ -48,6 +49,11 @@ export default new Router({
       path: '/timelines',
       name: 'Timelines',
       component: Timelines
+    },
+    {
+      path: '/loadings',
+      name: 'Loadings',
+      component: Loadings
     },
     { path: '/', redirect: '/dashboard' }
   ]

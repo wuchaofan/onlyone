@@ -33,12 +33,13 @@
           action: 'extension',
           title: '组件',
           items: [
+            {title: 'Timelines', href: {name: 'Timelines'}},
+            {title: 'Loadings', href: {name: 'Loadings'}},
             {
               title: 'Alerts',
               href: {name: 'Alerts'}
             },
             {title: 'Buttons', href: {name: 'Buttons'}},
-            {title: 'Timelines', href: {name: 'Timelines'}},
             {title: 'Forms', href: {name: 'Forms'}},
             {title: 'Tabs', href: {name: 'Tabs'}},
             {title: 'Steppers', href: {name: 'Steppers'}}
