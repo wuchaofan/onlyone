@@ -47,7 +47,7 @@ export default () => {
                     show: false
                 },
                 viewControl: {
-                    distance: 140
+                    distance: 100
                 },
                 postEffect: {
                     enable: true

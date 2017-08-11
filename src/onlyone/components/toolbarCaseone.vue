@@ -21,8 +21,9 @@
       </v-menu>
 
       <v-menu bottom left :position-y="34" :offset-y="true">
-        <v-btn icon slot="activator" dark>
+        <v-btn slot="activator" dark flat>
           <v-icon>more_vert</v-icon>
+          <span>主题色</span>
         </v-btn>
         <v-list class="pb-0 pt-0" dark>
           <v-list-tile :class="color" 
@@ -43,7 +44,10 @@ export default {
   data () {
     return {
       mindrawer: false,
-      themeColors: ['pink', 'indigo', 'blue', 'deep-purple', 'deep-orange', 'purple']
+      themeColors: ['pink', 'indigo', 'blue', 'deep-purple',
+        'deep-orange', 'purple', 'cyan',
+        'cyan darken-3', 'orange', 'orange darken-3',
+        'brown', 'brown darken-1', 'brown darken-3', 'grey darken-3']
     }
   },
   methods: {

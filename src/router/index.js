@@ -10,13 +10,14 @@ import Tabs from '@/onlyone/pages/ui/tabs'
 import Steppers from '@/onlyone/pages/ui/steppers'
 import Timelines from '@/onlyone/pages/ui/timelines/timelines'
 import Loadings from '@/onlyone/pages/ui/Loadings/loadings'
+import Colors from '@/onlyone/pages/styles/colors'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/dashboard',
+      path: '/dashboard/:flag?',
       name: 'Dashboard',
       component: () => import('@/onlyone/pages/dashboard/dashboard')
     },
@@ -54,6 +55,11 @@ export default new Router({
       path: '/loadings',
       name: 'Loadings',
       component: Loadings
+    },
+    {
+      path: '/colors',
+      name: 'Colors',
+      component: Colors
     },
     { path: '/', redirect: '/dashboard' }
   ]

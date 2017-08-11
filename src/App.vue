@@ -59,7 +59,7 @@
           action: 'style',
           title: '样式',
           items: [
-            { title: 'Colors' },
+            { title: 'Colors', href: {name: 'Colors'} },
             { title: 'Typography' },
             { title: 'Content' }
           ]
@@ -112,7 +112,9 @@ html{
 body{
   overflow: auto;
 }
-
+#onlyone-app{
+  position: relative;
+}
 #onlyone-app .navigation-drawer:not(.navigation-drawer--mini-variant) ~ main{
   padding-left: 220px;
 }

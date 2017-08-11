@@ -23,32 +23,31 @@
         </v-card>
       </v-flex>
 
-      <!-- <v-flex xs6 class="top">
+       <v-flex xs6 class="top" v-if="!$route.params.flag">
         <v-card>
           <v-card-text>
             <only-chart :option-data="leida"></only-chart>
           </v-card-text>
         </v-card>
       </v-flex>
-      <v-flex xs6 class="top">
+      <!-- <v-flex xs6 class="top">
         <v-card>
           <v-card-text>
             <only-chart :option-data="caseone"></only-chart>
           </v-card-text>
         </v-card>
-      </v-flex> -->
+      </v-flex>  -->
        <v-flex xs6 class="top">
         <v-card>
           <v-card-text>
-            <only-chart :option-data="case3" style="height: 460px;"></only-chart>
+            <only-chart :option-data="case3" ></only-chart>
           </v-card-text>
         </v-card>
       </v-flex>
-      <v-flex xs6 class="top">
+      <v-flex xs6 class="top" v-if="$route.params.flag">
         <v-card>
           <v-card-text>
              <only-chart :option-data="case4" 
-              style="height: 460px;"
               ></only-chart> 
           </v-card-text>
         </v-card>
@@ -88,6 +87,7 @@ export default {
   computed: {
   },
   mounted () {
+    console.log('router: ', this.$route)
   },
   methods: {
   },
