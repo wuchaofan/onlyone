@@ -1,11 +1,12 @@
 import Vuex from 'vuex'
 import Vue from 'vue'
+import Cookies from 'js-cookie'
 
 Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     leftsideMini: false,
-    themeBackgroundColor: 'purple',
+    themeBackgroundColor: Cookies.get('themeName') ? Cookies.get('themeName') : 'blue darken-2',
     preloadIsShow: true
   },
   mutations: {
@@ -15,6 +16,7 @@ export default new Vuex.Store({
     },
     changeThemebgcolor (state, obj) {
       state.themeBackgroundColor = obj.bgcolor
+      Cookies.set('themeName', obj.bgcolor)
     },
     changePreloadIsShow (state) {
       state.preloadIsShow = !state.preloadIsShow

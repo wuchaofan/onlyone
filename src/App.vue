@@ -112,6 +112,10 @@ html{
 body{
   overflow: auto;
 }
+.theme-image{
+  background-image: url(./assets/b.jpg);
+  background-size: cover;
+}
 #onlyone-app{
   position: relative;
 }

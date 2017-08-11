@@ -116,7 +116,7 @@ export default {
   border-bottom: 12px solid transparent;
   border-left: 12px solid #46b8e9;
   position: absolute;
-  z-index: 100;
+  z-index: 1;
   right: -24px;
 }
 .timeline-left .demo-card.light-green .head::after{
@@ -132,7 +132,7 @@ export default {
   border-bottom: 12px solid transparent;
   border-left: 12px solid transparent;
   position: absolute;
-  z-index: 100;
+  z-index: 1;
   left: -24px;
 }
 .timeline-right .demo-card.light-green .head::after{

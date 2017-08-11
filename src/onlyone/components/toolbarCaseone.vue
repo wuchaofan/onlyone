@@ -44,10 +44,9 @@ export default {
   data () {
     return {
       mindrawer: false,
-      themeColors: ['pink', 'indigo', 'blue', 'deep-purple',
+      themeColors: ['pink', 'indigo', 'blue', 'blue darken-2', 'deep-purple',
         'deep-orange', 'purple', 'cyan',
-        'cyan darken-3', 'orange', 'orange darken-3',
-        'brown', 'brown darken-1', 'brown darken-3', 'grey darken-3']
+        'cyan darken-2', 'green', 'green darken-2', 'orange darken-3', 'theme-image']
     }
   },
   methods: {
