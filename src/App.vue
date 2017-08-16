@@ -114,7 +114,12 @@ body{
 }
 .theme-image{
   background-image: url(./assets/b.jpg);
-  background-size: cover;
+  background-size: cover; 
+
+}
+.theme-gradient{
+  background: #ec008c;  /* fallback for old browsers */
+  background: linear-gradient(to right, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 #onlyone-app{
   position: relative;

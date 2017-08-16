@@ -6,7 +6,7 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     leftsideMini: false,
-    themeBackgroundColor: Cookies.get('themeName') || 'blue darken-2',
+    themeBackgroundColor: Cookies.get('themeName') || 'blue',
     preloadIsShow: true
   },
   mutations: {

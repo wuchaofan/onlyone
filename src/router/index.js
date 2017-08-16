@@ -11,6 +11,7 @@ import Steppers from '@/onlyone/pages/ui/steppers'
 import Timelines from '@/onlyone/pages/ui/timelines/timelines'
 import Loadings from '@/onlyone/pages/ui/Loadings/loadings'
 import Colors from '@/onlyone/pages/styles/colors'
+import Svg from '@/onlyone/pages/ui/svg/svg'
 
 Vue.use(Router)
 
@@ -60,6 +61,11 @@ export default new Router({
       path: '/colors',
       name: 'Colors',
       component: Colors
+    },
+    {
+      path: '/svg',
+      name: 'Svg',
+      component: Svg
     },
     { path: '/', redirect: '/dashboard' }
   ]
